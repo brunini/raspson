@@ -1,4 +1,4 @@
 # raspson
-Control GPIOs from Raspberry Pi using JSON-RPC 
+Control all GPIOs pins from your Raspberry Pi using JSON-RPC 2.0 over http.
 
-You really should consider another implementation.
+You really should consider use another implementation.
