@@ -43,8 +43,8 @@ def get_status(pin):
     return {u'status': {'output': {'pins': {pin: GPIO.input(pin)}}}}
 
 
-@jsonrpc.method('get_all_status(pin=int)', validate=True, authenticated=check_auth)
-def get_all_status(pin):
+@jsonrpc.method('get_all_status()', validate=True, authenticated=check_auth)
+def get_all_status():
     pin_status = {}
     for pin in pin_board_numbers:
         pin_status[pin] = GPIO.input(pin)
